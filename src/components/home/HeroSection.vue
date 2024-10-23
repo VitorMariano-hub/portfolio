@@ -5,7 +5,7 @@
         <h2 class="text-5xl font-bold mb-4">
           Olá! Meu nome é
           <span class="text-[#39FF14]">{{ name }}</span>
-          e sou um desenvolvedor web full-stack
+          e sou desenvolvedor web full-stack<span class="text-[#39FF14]">.</span>
         </h2>
         <p class="text-xl mb-6">{{ role }}</p>
         <div class="flex gap-4">
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="relative">
-        <div class="bg-[#2C2C2C] w-64 h-64 rounded-full mx-auto relative overflow-hidden border-4 border-[#C0C0C0]">
+        <div class="bg-[#2C2C2C] w-64 h-64 rounded-full mx-auto relative overflow-hidden border-4 border-[#ffffff]">
           <img :src="profileImage" alt="Profile" class="w-full h-full object-cover"/>
         </div>
         <div class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#39FF14]/20 rounded-full blur-3xl"></div>
@@ -53,13 +53,13 @@ export default {
     Mail
   },
   setup() {
-    const name = ref('Vitor Mariano')
+    const name = ref('Vitor')
     const role = ref('Ao longo do tempo, tenho me concentrado especialmente no uso do framework Laravel, encontrando nele um parceiro poderoso para criar aplicações web eficientes e de alto desempenho.')
     const profileImage = ref(profileImageSrc)
     const socials = [
-      { name: 'Github', icon: Github, url: 'https://github.com/username' },
-      { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/username' },
-      { name: 'Email', icon: Mail, url: 'mailto:email@exemplo.com' }
+      { name: 'Github', icon: Github, url: 'https://github.com/VitorMariano-hub' },
+      { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/vitor-mariano-037b56138/' },
+      { name: 'Email', icon: Mail, url: 'vitorma1992@gmail.com' }
     ]
 
     return {
