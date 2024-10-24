@@ -31,6 +31,10 @@ export default {
           href: '#projects'
         },
         {
+          text: 'Experiências',
+          href: '#experience'
+        },
+        {
           text: 'Contato',
           href: '#contact'
         }

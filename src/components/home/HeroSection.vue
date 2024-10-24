@@ -4,8 +4,8 @@
       <div>
         <h2 class="text-5xl font-bold mb-4">
           Olá! Meu nome é
-          <span class="text-[#39FF14]">{{ name }}</span>
-          e sou desenvolvedor web full-stack<span class="text-[#39FF14]">.</span>
+          <span class="text-[#39FF14]">{{ name }}</span>,
+          desenvolvedor web full-stack<span class="text-[#39FF14]">.</span>
         </h2>
         <p class="text-xl mb-6">{{ role }}</p>
         <div class="flex gap-4">
@@ -51,8 +51,8 @@ export default {
     Mail
   },
   setup() {
-    const name = ref('Vitor')
-    const role = ref('Ao longo do tempo, tenho me concentrado especialmente no uso do framework Laravel, encontrando nele um parceiro poderoso para criar aplicações web eficientes e de alto desempenho.')
+    const name = ref('Vitor Mariano')
+    const role = ref('Graduando em Análise e Desenvolvimento de Sistemas, desenvolvedor web full-stack com mais de 3 anos de experiência. Entusiasta de tecnologia e apaixonado por programação.')
     const profileImage = ref(profileImageSrc)
     const socials = [
       { name: 'Github', icon: Github, url: 'https://github.com/VitorMariano-hub' },
@@ -71,5 +71,5 @@ export default {
 </script>
 
 <style scoped>
-/* Você pode adicionar estilos personalizados para o GIF aqui */
+
 </style>
