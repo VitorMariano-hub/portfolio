@@ -1,7 +1,7 @@
 <template>
   <DefaultLayout>
     <HeroSection />
-    <AboutSectionVue :about="about" />
+    <AboutSectionVue />
     <ProjectsSection :projects="projects" />
     <ContactSection />
   </DefaultLayout>
@@ -51,18 +51,8 @@ export default {
         github: 'https://github.com/VitorMariano-hub/APP-Gorjetas'
       }
     ]
-    const about = [
-      'Desenvolvedor web full-stack com mais de três anos de experiência. Ao longo da minha trajetória profissional, tive a oportunidade de atuar como desenvolvedor full stack em projetos nos setores financeiro e de ensino online.',
-      'Minha principal área de atuação é o desenvolvimento backend, onde utilizo PHP e Laravel para integrar bancos de dados relacionais e criar APIs RESTful.',
-      'Possuo conhecimentos e experiência em frontend também, com foco no desenvolvimento de interfaces dinâmicas e responsivas utilizando tecnologias como JavaScript, Vue.js, jQuery, CSS3, Tailwind, Bootstrap, HTML5.',
-    ]
-
-
-
-
     return {
-      projects,
-      about
+      projects
     }
   }
 }

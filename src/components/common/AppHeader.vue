@@ -1,7 +1,7 @@
 <template>
     <nav class="fixed w-full backdrop-blur-md bg-[#0A0A0A]/80 border-b border-[#2C2C2C] z-50">
       <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-[#39FF14] text-xl font-bold">Vitor Mariano</h1>
+        <a href="#"><h1 class="text-[#39FF14] text-xl font-bold">Vitor Mariano</h1></a>
         <div class="flex gap-6">
           <a 
             v-for="item in menuItems" 
