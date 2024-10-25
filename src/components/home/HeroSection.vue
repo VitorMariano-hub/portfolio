@@ -10,7 +10,7 @@
           >, desenvolvedor web full-stack<span class="text-[#39FF14]">.</span>
         </h2>
         <p class="text-xl mb-6">{{ role }}</p>
-        <div class="flex gap-4">
+        <div class="flex gap-2 md:gap-4 lg:gap-4">
           <a
             href="#contact"
             class="bg-[#39FF14] text-black px-6 py-2 rounded hover:bg-[#00FFFF] transition-colors"
@@ -94,7 +94,7 @@ export default {
       role,
       profileImage,
       socials,
-      pdfUrl: "public/Vitor.pdf",
+      pdfUrl: "https://github.com/VitorMariano-hub/Curriculo/raw/main/VitorDesenvolvedorPHP.pdf",
       pdfFileName: "Vitor - Desenvolvedor Full-Stack PHP.pdf",
     };
   },
