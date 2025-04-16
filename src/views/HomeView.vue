@@ -34,8 +34,8 @@ export default {
         title: 'Task Manager Web',
         description: 'Aplicação de gerenciamento de tarefas em estilo Kanban, com frontend em Vue.js e backend Laravel. Permite criar, mover e excluir tarefas entre colunas com drag & drop. \n\n🔐 Acesso de teste:\n• Usuário: teste@teste.com\n• Senha: teste@123',
         image: 'https://i.postimg.cc/9XqJXKZR/Capturar.png',
-        demo: 'https://task-manager-web.onrender.com',
-        github: 'https://github.com/VitorMariano-hub/task-manager-app'
+        demo: 'https://task-manager-web-pxgc.onrender.com/',
+        github: 'https://github.com/VitorMariano-hub/task-manager-web'
       },
       {
         id: 2,
