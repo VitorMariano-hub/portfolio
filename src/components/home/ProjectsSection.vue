@@ -14,6 +14,7 @@
             <div class="p-4">
               <h4 class="text-xl font-bold mb-2">{{ project.title }}</h4>
               <p class="text-sm mb-4">{{ project.description }}</p>
+              <p class="text-sm mb-2">{{ project.credentials }}</p>
               <div class="flex gap-2">
                 <a 
                   v-if="project.demo" 
