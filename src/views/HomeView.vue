@@ -1,8 +1,8 @@
 <template>
   <DefaultLayout>
     <HeroSection />
-    <AboutSectionVue />
     <ProjectsSection :projects="projects" />
+    <AboutSectionVue />
     <XpSection />
     <ContactSection />
   </DefaultLayout>
