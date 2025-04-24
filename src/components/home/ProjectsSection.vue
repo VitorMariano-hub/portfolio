@@ -6,7 +6,7 @@
           <div 
             v-for="project in projects" 
             :key="project.id" 
-            class="bg-[#2C2C2C] rounded-lg overflow-hidden border border-[#C0C0C0]/20 group"
+            class="bg-[#2C2C2C] rounded-md overflow-hidden  group"
           >
             <div class="aspect-video bg-[#0A0A0A]">
               <img :src="project.image" :alt="project.title" class="w-full h-full object-cover"/>

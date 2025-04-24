@@ -39,7 +39,7 @@
       </div>
       <div class="relative mb-4">
         <div
-          class="bg-[#2C2C2C] w-64 h-64 rounded-full mx-auto relative overflow-hidden border-4 border-[#ffffff]"
+          class="w-64 h-64 rounded-full mx-auto relative overflow-hidden "
         >
           <img
             :src="profileImage"

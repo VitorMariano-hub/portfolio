@@ -4,7 +4,6 @@
     <ProjectsSection :projects="projects" />
     <AboutSectionVue />
     <XpSection />
-    <ContactSection />
   </DefaultLayout>
 </template>
 

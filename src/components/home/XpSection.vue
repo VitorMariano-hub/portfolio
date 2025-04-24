@@ -1,12 +1,12 @@
 <template>
-<section id="experience" class="py-20 bg-[#0A0A0A] border-t border-[#292929]">
+<section id="experience" class="py-20 bg-[#0A0A0A] ">
   <div class="container mx-auto px-4">
     <h3 class="text-3xl font-bold mb-8 text-[#00FFFF]">Experiência Profissional</h3>
     <div class="space-y-8">
       <div 
         v-for="experience in experiences" 
         :key="experience.company" 
-        class="bg-[#2C2C2C] p-6 rounded-lg border border-[#C0C0C0]/20"
+        class="bg-[#2C2C2C] p-6 rounded-md"
       >
         <h4 class="text-xl font-bold text-[#39FF14]">{{ experience.company }}</h4>
         <p class="text-sm font-bold mb-2 text-[#E0E0E0]">{{ experience.position }} - {{ experience.period }}</p>
