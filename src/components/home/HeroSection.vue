@@ -1,6 +1,11 @@
 <template>
-  <section id="hero"
+  <section
+    ref="hero"
+    id="hero"
     class="min-h-screen flex items-center justify-center pt-28 md:pt-16 xl:pt-16"
+    data-aos="zoom-in"
+    data-aos-duration="800"
+    data-aos-delay="250"
   >
     <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
       <div>
@@ -48,7 +53,7 @@
           />
         </div>
         <div
-          class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#39FF14]/20 rounded-full blur-3xl"
+          class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#39FF14]/10 rounded-full blur-3xl"
         ></div>
       </div>
     </div>
@@ -100,5 +105,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

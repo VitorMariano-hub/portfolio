@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="py-20 bg-[#2C2C2C]">
+  <section ref="about" id="about" class="py-20 bg-[#2C2C2C]">
     <div class="container mx-auto px-4">
       <h3 class="text-3xl font-bold mb-8 text-[#00FFFF]">Sobre Mim</h3>
       <div class="grid md:grid-cols-2 gap-8">
@@ -10,7 +10,7 @@
         </div>
         
         <div class="grid grid-cols-2 gap-4">
-          <div v-for="skill in skills" :key="skill.title" class="bg-[#0A0A0A] p-4 rounded">
+          <div v-for="skill in skills" :key="skill.title" class="bg-[#0A0A0A] p-4 rounded transition-transform duration-300">
             <div class="flex gap-2">
               <h4 class="font-bold mb-2">{{ skill.title }} </h4>
               <component :is="skill.icon" class="w-6 h-6 text-[#39FF14] mb-2" />
@@ -51,7 +51,7 @@ export default {
     return {
       skills
     }
-  }
+  },
 }
 </script>
 
