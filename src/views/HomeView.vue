@@ -35,7 +35,7 @@ export default {
         image: 'https://i.postimg.cc/9XqJXKZR/Capturar.png',
         demo: 'https://task-manager-web-pxgc.onrender.com/',
         github: 'https://github.com/VitorMariano-hub/task-manager-web',
-        credentials: 'Usuário teste: teste@teste.com | teste@123'
+        credentials: 'Usuário teste: userteste@teste.com | teste@123'
       },
       {
         id: 2,
