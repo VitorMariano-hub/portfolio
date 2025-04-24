@@ -1,5 +1,5 @@
 <template>
-  <section
+  <section id="hero"
     class="min-h-screen flex items-center justify-center pt-28 md:pt-16 xl:pt-16"
   >
     <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">

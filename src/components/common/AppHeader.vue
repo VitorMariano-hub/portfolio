@@ -23,12 +23,12 @@ export default {
     return {
       menuItems: [
         {
-          text: 'Sobre',
-          href: '#about'
-        },
-        {
           text: 'Projetos',
           href: '#projects'
+        },
+        {
+          text: 'Sobre',
+          href: '#about'
         },
         {
           text: 'Experiências',
@@ -36,7 +36,7 @@ export default {
         },
         {
           text: 'Contato',
-          href: '#contact'
+          href: '#hero'
         }
       ]
     }
