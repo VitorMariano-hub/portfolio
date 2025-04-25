@@ -17,7 +17,8 @@
         <p class="text-xl mb-6">{{ role }}</p>
         <div class="flex gap-2 md:gap-4 lg:gap-4">
           <a
-            href="#contact"
+            :href="whatsappLink"
+            target="_blank"
             class="bg-[#39FF14] text-black px-6 py-2 rounded hover:bg-[#00FFFF] transition-colors"
           >
             Contato
@@ -103,5 +104,12 @@ export default {
       pdfFileName: "Vitor - Desenvolvedor Full-Stack PHP.pdf",
     };
   },
+  computed: {
+    whatsappLink() {
+      const phone = '5513981977083';
+      const message = encodeURIComponent('Olá! Gostaria de saber mais sobre seus projetos.');
+      return `https://wa.me/${phone}?text=${message}`;
+    }
+  }
 };
 </script>
