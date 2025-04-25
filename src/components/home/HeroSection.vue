@@ -19,7 +19,7 @@
           <a
             :href="whatsappLink"
             target="_blank"
-            class="bg-[#39FF14] text-black px-6 py-2 rounded hover:bg-[#00FFFF] transition-colors"
+            class="bg-[#39FF14] text-black px-6 py-2 rounded hover:bg-[#00FFFF]"
           >
             Contato
           </a>
@@ -54,7 +54,7 @@
           />
         </div>
         <div
-          class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#39FF14]/10 rounded-full blur-3xl"
+          class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#00FFFF]/20 rounded-full blur-3xl"
         ></div>
       </div>
     </div>
@@ -64,7 +64,7 @@
 <script>
 import { ref } from "vue";
 import { Github, Linkedin, Mail } from "lucide-vue-next";
-import profileImageSrc from "@/assets/profile.jpg";
+import profileImageSrc from "@/assets/profile.png";
 import DownloadPdfButton from "@/components/DownloadPdfButton.vue";
 
 export default {
