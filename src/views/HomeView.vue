@@ -48,6 +48,15 @@ export default {
       },
       {
         id: 3,
+        title: 'Task Manager Api',
+        description: 'A Task Manager API é uma API RESTful desenvolvida com Laravel e protegida por Laravel Sanctum para autenticação de usuários. Ela serve como backend para a aplicação de gerenciamento de tarefas Task Manager Web.',
+        image: 'https://i.imgur.com/LY4XcNS.png',
+        demo: 'https://task-manager-0wdh.onrender.com/api/documentation',
+        github: 'https://github.com/VitorMariano-hub/task-manager',
+        credentials: 'Usuário teste: userteste@teste.com | teste@123'
+      },
+      {
+        id: 4,
         title: 'Wildbeast',
         description: 'O projeto "Wildbeast" é um site com uma única página, focado na apresentação de um conceito visual impactante e responsivo.',
         image: 'https://camo.githubusercontent.com/ac288fce0e7b73dc8f2c93912f63c046923c6524d773e88f72319c1f849b7fe3/68747470733a2f2f75706c6f61646465696d6167656e732e636f6d2e62722f696d616765732f3030332f3338392f3831342f6f726967696e616c2f6c622e504e473f31363239343033353833',
