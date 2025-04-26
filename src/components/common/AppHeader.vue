@@ -2,7 +2,7 @@
   <nav class="fixed w-full backdrop-blur-md bg-[#0A0A0A]/80 border-b border-[#2C2C2C] z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <a href="#" @click.prevent="handleScrollTo('hero')">
+      <a href="#" @click.prevent="handleScrollTo('#hero')">
         <h1 class="text-[#39FF14] text-xl font-bold">Vitor Mariano</h1>
       </a>
 
@@ -67,6 +67,7 @@ export default {
       menuItems: [
         { text: 'Projetos', href: '#projects' },
         { text: 'Sobre', href: '#about' },
+        { text: 'Freelas', href: '#jobs' },
         { text: 'Experiências', href: '#experience' },
         { text: 'Contato', href: '#hero' }
       ]
@@ -74,6 +75,7 @@ export default {
   },
   methods: {
     handleScrollTo(href) {
+      console.log(href)
       if (href && href.startsWith('#')) {
         const id = href.substring(1);
         this.$emit('scroll-to', id);

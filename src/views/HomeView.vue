@@ -3,6 +3,7 @@
     <HeroSection />
     <ProjectsSection :projects="projects" />
     <AboutSectionVue />
+    <JobsSection :jobs="jobs" />
     <XpSection />
   </DefaultLayout>
 </template>
@@ -14,6 +15,7 @@ import AboutSectionVue from '@/components/home/AboutSection.vue'
 import ProjectsSection from '@/components/home/ProjectsSection.vue'
 import ContactSection from '@/components/home/ContactSection.vue'
 import XpSection from '@/components/home/XpSection.vue'
+import JobsSection from '@/components/home/JobsSection.vue'
 
 
 export default {
@@ -24,7 +26,8 @@ export default {
     AboutSectionVue,
     ProjectsSection,
     XpSection,
-    ContactSection
+    ContactSection,
+    JobsSection
   },
   setup() {
     const projects = [
@@ -64,8 +67,20 @@ export default {
         github: 'https://github.com/VitorMariano-hub/Wildbeast'
       },
     ]
+
+    const jobs = [
+      {
+        id: 1,
+        title: 'Site Institucional - WM Express',
+        description: 'Projeto completo realizado de ponta a ponta: desenvolvimento do site responsivo, registro de domínio, configuração de hospedagem, deploy, SEO on-page, integração com Google Meu Negócio e suporte inicial em campanhas Google Ads. Foco total em performance, usabilidade e presença digital.',
+        link: 'https://wmexpress.com.br/',
+        image: 'https://i.imgur.com/8IyoXUB.png',
+      },
+    ];
+    
     return {
-      projects
+      projects,
+      jobs
     }
   }
 }
