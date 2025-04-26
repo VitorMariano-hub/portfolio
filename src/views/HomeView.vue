@@ -69,15 +69,22 @@ export default {
     ]
 
     const jobs = [
-      {
+       {
         id: 1,
+        title: 'Loja Virtual - Vanilla Store',
+        description: 'Configuração e personalização completa da loja virtual na plataforma Nuvemshop, incluindo registro de domínio, integração com sistemas de pagamento e frete, ajustes de design, otimizações de SEO e performance, além de melhorias na experiência do usuário. Suporte nas configurações da loja para uma operação eficiente e segura.',
+        link: 'https://www.storevanilla.com.br/',
+        image: 'https://i.imgur.com/SS5O1QA.png',
+      },
+      {
+        id: 2,
         title: 'Site Institucional - WM Express',
         description: 'Projeto completo realizado de ponta a ponta: desenvolvimento do site responsivo, registro de domínio, configuração de hospedagem, deploy, SEO on-page, integração com Google Meu Negócio e suporte inicial em campanhas Google Ads. Foco total em performance, usabilidade e presença digital.',
         link: 'https://wmexpress.com.br/',
         image: 'https://i.imgur.com/8IyoXUB.png',
-      },
+      }
     ];
-    
+
     return {
       projects,
       jobs
