@@ -60,6 +60,13 @@ export default {
       },
       {
         id: 4,
+        title: 'Princípios SOLID da Programação Orientada a Objetos',
+        description: 'Projeto desenvolvido com exemplos práticos dos 5 princípios do SOLID aplicados em PHP, focando em boas práticas de design, código limpo e testes automatizados.',
+        image: 'https://images.ctfassets.net/bp521nfj3cq3/4pw3f1nT851svWyID3Bl46/58e6053ac0258636eef45f899c542706/Solid.png',
+        github: 'https://github.com/VitorMariano-hub/solid-principles-php'
+      },
+      {
+        id: 5,
         title: 'Wildbeast',
         description: 'O projeto "Wildbeast" é um site com uma única página, focado na apresentação de um conceito visual impactante e responsivo.',
         image: 'https://camo.githubusercontent.com/ac288fce0e7b73dc8f2c93912f63c046923c6524d773e88f72319c1f849b7fe3/68747470733a2f2f75706c6f61646465696d6167656e732e636f6d2e62722f696d616765732f3030332f3338392f3831342f6f726967696e616c2f6c622e504e473f31363239343033353833',
