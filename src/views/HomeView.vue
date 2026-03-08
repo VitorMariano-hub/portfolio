@@ -1,9 +1,9 @@
 <template>
   <DefaultLayout>
     <HeroSection />
-    <XpSection />
-    <ProjectsSection :projects="projects" />
     <AboutSectionVue />
+    <ProjectsSection :projects="projects" />
+    <XpSection />
     <JobsSection :jobs="jobs" />
   </DefaultLayout>
 </template>
