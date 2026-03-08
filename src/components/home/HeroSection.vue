@@ -2,60 +2,77 @@
   <section
     ref="hero"
     id="hero"
-    class="min-h-screen flex items-center justify-center pt-28 md:pt-16 xl:pt-16"
-    data-aos="zoom-in"
-    data-aos-duration="800"
-    data-aos-delay="250"
+    class="min-h-screen flex items-center justify-center pt-28 md:pt-16 xl:pt-16 relative overflow-hidden"
+    data-aos="fade-up"
+    data-aos-duration="1000"
   >
-    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <!-- Background Glow Effect -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#39FF14]/10 rounded-full blur-[120px] -z-10"></div>
+
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
       <div>
-        <h2 class="text-5xl font-bold mb-4">
+        <p class="text-gray-400 text-lg mb-2 font-medium tracking-wide">
           Olá! Meu nome é
-          <span class="text-[#39FF14]">{{ name }}</span
-          >, desenvolvedor web full-stack<span class="text-[#39FF14]">.</span>
+        </p>
+        <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#39FF14] to-[#00FFFF] drop-shadow-[0_0_10px_rgba(57,255,20,0.3)]">
+            {{ name }}
+          </span>
         </h2>
-        <p class="text-xl mb-6">{{ role }}</p>
-        <div class="flex gap-2 md:gap-4 lg:gap-4">
+          
+        <h3 class="text-2xl md:text-3xl text-gray-200 font-semibold mb-6">
+          Desenvolvedor Full-Stack <span class="text-[#39FF14]">.</span>
+        </h3>
+
+        <p class="text-gray-400 text-lg mb-8 leading-relaxed max-w-lg">
+          {{ role }}
+        </p>
+
+        <div class="flex flex-wrap gap-4">
           <a
             :href="whatsappLink"
             target="_blank"
-            class="bg-[#39FF14] text-black px-6 py-2 rounded hover:bg-[#00FFFF]"
+            class="bg-[#39FF14] text-black font-bold px-8 py-3 rounded-md hover:bg-[#32e012] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(57,255,20,0.4)]"
           >
-            Contato
+            Entrar em Contato
           </a>
           <a
             href="#projects"
-            class="border border-[#39FF14] px-6 py-2 rounded hover:bg-[#39FF14] hover:text-black transition-colors"
+            class="border border-[#39FF14]/50 text-[#39FF14] px-8 py-3 rounded-md hover:bg-[#39FF14]/10 transition-all duration-300 transform hover:-translate-y-1"
           >
-            Projetos
+            Ver Projetos
           </a>
           <download-pdf-button :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
         </div>
-        <div class="flex gap-4 mt-8">
+        
+        <div class="flex gap-6 mt-10">
           <a
             v-for="social in socials"
             :key="social.name"
             :href="social.url"
             target="_blank"
-            class="hover:text-[#39FF14]"
+            class="text-gray-400 hover:text-[#39FF14] transition-all duration-300 transform hover:scale-110"
           >
             <component :is="social.icon" class="w-6 h-6" />
           </a>
         </div>
       </div>
-      <div class="relative mb-4">
-        <div
-          class="w-64 h-64 rounded-full mx-auto relative overflow-hidden "
-        >
-          <img
-            :src="profileImage"
-            alt="Profile"
-            class="w-full h-full object-cover"
-          />
+
+      <div class="relative flex justify-center md:justify-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="relative w-72 h-72 md:w-96 md:h-96">
+          <!-- Decorative circle behind image -->
+           <div class="absolute inset-0 bg-gradient-to-tr from-[#39FF14] to-[#00FFFF] rounded-full blur-2xl opacity-20 animate-pulse"></div>
+           
+          <div
+            class="w-full h-full rounded-full border-2 border-[#39FF14]/30 relative overflow-hidden bg-[#0A0A0A] p-2"
+          >
+            <img
+              :src="profileImage"
+              alt="Profile"
+              class="w-full h-full object-cover object-center rounded-full transition-all duration-500 hover:scale-105"
+            />
+          </div>
         </div>
-        <div
-          class="absolute -z-10 top-0 right-0 w-96 h-96 bg-[#00FFFF]/20 rounded-full blur-3xl"
-        ></div>
       </div>
     </div>
   </section>
@@ -64,7 +81,7 @@
 <script>
 import { ref } from "vue";
 import { Github, Linkedin, Mail } from "lucide-vue-next";
-import profileImageSrc from "@/assets/profile.png";
+import profileImageSrc from "@/assets/profile.jpeg";
 import DownloadPdfButton from "@/components/DownloadPdfButton.vue";
 
 export default {

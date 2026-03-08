@@ -1,21 +1,21 @@
 <template>
   <DefaultLayout>
     <HeroSection />
+    <XpSection />
     <ProjectsSection :projects="projects" />
     <AboutSectionVue />
     <JobsSection :jobs="jobs" />
-    <XpSection />
   </DefaultLayout>
 </template>
 
 <script>
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import HeroSection from '@/components/home/HeroSection.vue'
-import AboutSectionVue from '@/components/home/AboutSection.vue'
-import ProjectsSection from '@/components/home/ProjectsSection.vue'
-import ContactSection from '@/components/home/ContactSection.vue'
 import XpSection from '@/components/home/XpSection.vue'
+import ProjectsSection from '@/components/home/ProjectsSection.vue'
+import AboutSectionVue from '@/components/home/AboutSection.vue'
 import JobsSection from '@/components/home/JobsSection.vue'
+import ContactSection from '@/components/home/ContactSection.vue'
 
 
 export default {
