@@ -65,11 +65,10 @@ export default {
     return {
       isMenuOpen: false,
       menuItems: [
-        { text: 'Experiências', href: '#experience' },
-        { text: 'Projetos', href: '#projects' },
         { text: 'Sobre', href: '#about' },
+        { text: 'Projetos', href: '#projects' },
+        { text: 'Experiências', href: '#experience' },
         { text: 'Freelas', href: '#jobs' },
-        { text: 'Contato', href: '#hero' }
       ]
     };
   },
