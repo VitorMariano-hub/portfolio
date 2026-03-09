@@ -81,7 +81,7 @@
 <script>
 import { ref } from "vue";
 import { Github, Linkedin, Mail } from "lucide-vue-next";
-import profileImageSrc from "@/assets/profile.jpeg";
+import profileImageSrc from "@/assets/_profile.jpeg";
 import DownloadPdfButton from "@/components/DownloadPdfButton.vue";
 
 export default {
