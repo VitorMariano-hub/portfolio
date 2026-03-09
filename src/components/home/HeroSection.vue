@@ -95,7 +95,7 @@ export default {
   setup() {
     const name = ref("Vitor Mariano");
     const role = ref(
-      "Graduando em Análise e Desenvolvimento de Sistemas, desenvolvedor web full-stack com mais de 4 anos de experiência. Entusiasta de tecnologia e apaixonado por programação."
+      "Graduando em Análise e Desenvolvimento de Sistemas, desenvolvedor web full-stack com mais de 5 anos de experiência. Entusiasta de tecnologia e apaixonado por programação."
     );
     const profileImage = ref(profileImageSrc);
     const socials = [
