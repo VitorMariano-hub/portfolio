@@ -117,8 +117,8 @@ export default {
       role,
       profileImage,
       socials,
-      pdfUrl: "https://github.com/VitorMariano-hub/Curriculo/raw/main/VitorDesenvolvedorPHP.pdf",
-      pdfFileName: "Vitor - Desenvolvedor Full-Stack PHP.pdf",
+      pdfUrl: "https://github.com/VitorMariano-hub/Curriculo/raw/main/Vitor_Mariano_Dev_CV.pdf",
+      pdfFileName: "Vitor_Mariano-Desenvolvedor.pdf",
     };
   },
   computed: {
