@@ -12,7 +12,7 @@
       <div class="grid md:grid-cols-2 gap-12 items-start">
         <div class="space-y-6 text-lg text-gray-300 leading-relaxed font-light">
           <p class="border-l-2 border-[#39FF14] pl-4">
-            Desenvolvedor web full-stack com mais de 4 anos de experiência. Ao longo da minha trajetória profissional, tive a oportunidade de atuar como desenvolvedor full stack em projetos nos setores financeiro e de ensino online.
+            Desenvolvedor web full-stack com mais de 5 anos de experiência. Ao longo da minha trajetória profissional, tive a oportunidade de atuar como desenvolvedor full stack em projetos nos setores financeiro e de ensino online.
           </p>
           <p>
             Minha principal área de atuação é o desenvolvimento backend, onde utilizo <strong class="text-white">PHP</strong> e <strong class="text-white">Laravel</strong> para integrar bancos de dados relacionais e criar APIs RESTful robustas.
