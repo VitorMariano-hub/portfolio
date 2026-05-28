@@ -53,7 +53,7 @@ export default {
         title: 'Sistema de Enquetes',
         description: 'Aplicação web desenvolvida com Laravel. Administradores autenticados podem criar e excluir enquetes, enquanto o público tem acesso a elas e pode votar apenas uma vez por enquete, com verificação feita por IP.',
         image: 'https://i.imgur.com/vMwCala.png',
-        demo: 'https://polls-system-web-production.up.railway.app',
+        demo: 'https://polls.vitormariano.dev.br/',
         github: 'https://github.com/VitorMariano-hub/polls-system-web',
         credentials: 'Usuário teste: admin@example.com | password@123'
       },
