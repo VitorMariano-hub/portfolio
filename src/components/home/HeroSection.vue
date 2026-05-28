@@ -127,7 +127,7 @@ export default {
       {
         name: "LinkedIn",
         icon: Linkedin,
-        url: "https://www.linkedin.com/in/vitor-mariano-037b56138/",
+        url: "https://www.linkedin.com/in/vitor-mariano-developer/",
       },
       { name: "Email", icon: Mail, url: "vitorma1992@gmail.com" },
     ];
@@ -137,7 +137,7 @@ export default {
       role,
       profileImage,
       socials,
-      pdfUrl: "https://github.com/VitorMariano-hub/Curriculo/raw/main/Vitor_Mariano_Dev_CV.pdf",
+      pdfUrl: "https://github.com/VitorMariano-hub/Curriculo/raw/main/Vitor_Mariano_Desenvolvedor_Web_PHP.pdf",
       pdfFileName: "Vitor_Mariano-Desenvolvedor.pdf",
     };
   },
