@@ -6,8 +6,9 @@
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <!-- Background Glow Effect -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#39FF14]/10 rounded-full blur-[120px] -z-10"></div>
+    <!-- Background Aurora Glow Effects -->
+    <div class="absolute top-[10%] left-[5%] w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#39FF14]/8 rounded-full blur-[100px] md:blur-[150px] -z-10 animate-aurora-1"></div>
+    <div class="absolute bottom-[10%] right-[5%] w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#00FFFF]/8 rounded-full blur-[100px] md:blur-[150px] -z-10 animate-aurora-2"></div>
 
     <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
       <div>
@@ -58,19 +59,38 @@
         </div>
       </div>
 
-      <div class="relative flex justify-center md:justify-center" data-aos="fade-left" data-aos-delay="200">
+      <div class="relative flex justify-center md:justify-center group" data-aos="fade-left" data-aos-delay="200">
         <div class="relative w-72 h-72 md:w-96 md:h-96">
-          <!-- Decorative circle behind image -->
-           <div class="absolute inset-0 bg-gradient-to-tr from-[#39FF14] to-[#00FFFF] rounded-full blur-2xl opacity-20 animate-pulse"></div>
-           
-          <div
-            class="w-full h-full rounded-full border-2 border-[#39FF14]/30 relative overflow-hidden bg-[#0A0A0A] p-2"
-          >
+          <!-- Decorative blurred gradient background with enhanced scale and opacity on hover -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-[#39FF14] to-[#00FFFF] rounded-[2rem] md:rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500"></div>
+          
+          <!-- Outer border frame with rotation effect -->
+          <div class="absolute inset-0 border border-[#39FF14]/30 rounded-[2rem] md:rounded-[3rem] transform rotate-3 group-hover:rotate-0 transition-transform duration-500 -z-10"></div>
+          <div class="absolute inset-0 border border-[#00FFFF]/20 rounded-[2rem] md:rounded-[3rem] transform -rotate-3 group-hover:rotate-0 transition-transform duration-500 -z-10"></div>
+
+          <!-- Main Image Container with asymmetric rounded corners -->
+          <div class="w-full h-full rounded-[2rem] md:rounded-[3rem] border-2 border-gradient overflow-hidden bg-[#0A0A0A] p-2 relative z-10 transition-all duration-500 group-hover:scale-[1.02]">
             <img
               :src="profileImage"
               alt="Profile"
-              class="w-full h-full object-cover object-center rounded-full transition-all duration-500 hover:scale-105"
+              class="w-full h-full object-cover object-center rounded-[1.6rem] md:rounded-[2.6rem] transition-all duration-500"
             />
+          </div>
+
+          <!-- Floating Badges (Dynamic tech tags) -->
+          <div class="absolute -top-4 -left-4 bg-[#0A0A0A]/80 backdrop-blur-md border border-[#39FF14]/30 text-[#39FF14] px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-lg z-20 animate-float-slow">
+            <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-ping"></span>
+            Laravel 12
+          </div>
+
+          <div class="absolute top-1/2 -right-8 bg-[#0A0A0A]/80 backdrop-blur-md border border-[#00FFFF]/30 text-[#00FFFF] px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-lg z-20 animate-float-medium">
+            <span class="w-2 h-2 rounded-full bg-[#00FFFF] animate-ping"></span>
+            Vue.js 3
+          </div>
+
+          <div class="absolute -bottom-4 left-6 bg-[#0A0A0A]/80 backdrop-blur-md border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-lg z-20 animate-float-fast">
+            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            SQL & APIs
           </div>
         </div>
       </div>
@@ -95,7 +115,7 @@ export default {
   setup() {
     const name = ref("Vitor Mariano");
     const role = ref(
-      "Graduado em Análise e Desenvolvimento de Sistemas, desenvolvedor web full-stack com mais de 5 anos de experiência. Entusiasta de tecnologia e apaixonado por programação."
+      "Desenvolvedor Full-Stack especializado em arquitetura de alto desempenho com Laravel (PHP) e interfaces dinâmicas com Vue.js. Focado em APIs RESTful escaláveis, testes automatizados e código limpo."
     );
     const profileImage = ref(profileImageSrc);
     const socials = [
@@ -130,3 +150,54 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.border-gradient {
+  border-image: linear-gradient(to right, #39FF14, #00FFFF) 1;
+}
+
+@keyframes aurora1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(40px, -60px) scale(1.15); }
+}
+
+@keyframes aurora2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(-40px, 60px) scale(1.15); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes floatMedium {
+  0%, 100% { transform: translateY(0px) rotate(1deg); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+}
+
+@keyframes floatFast {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-aurora-1 {
+  animation: aurora1 25s ease-in-out infinite;
+}
+
+.animate-aurora-2 {
+  animation: aurora2 30s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatMedium 5s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: floatFast 4s ease-in-out infinite;
+}
+</style>

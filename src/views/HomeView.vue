@@ -1,9 +1,9 @@
 <template>
   <DefaultLayout>
     <HeroSection />
-    <AboutSectionVue />
     <ProjectsSection :projects="projects" />
     <XpSection />
+    <AboutSectionVue />
     <JobsSection :jobs="jobs" />
   </DefaultLayout>
 </template>
@@ -31,6 +31,14 @@ export default {
   },
   setup() {
     const projects = [
+      {
+        id: 7,
+        title: 'MetaVaga - Gerenciador de Estudos',
+        description: 'Plataforma gamificada inteligente para concurseiros organizarem seus ciclos de estudo e edital. Desenvolvido com Laravel 12, Tailwind CSS v4 e Alpine.js, conta com métricas de desempenho em questões, conquistas, histórico de progresso e modo escuro nativo.',
+        image: '/metavaga.png',
+        demo: 'https://concurso-tracker.vitormariano.dev.br/',
+        github: 'https://github.com/VitorMariano-hub/concurso-tracker'
+      },
       {
         id: 1,
         title: 'Task Manager Web',
