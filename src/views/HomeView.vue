@@ -55,7 +55,7 @@ export default {
         image: 'https://i.imgur.com/vMwCala.png',
         demo: 'https://polls.vitormariano.dev.br/',
         github: 'https://github.com/VitorMariano-hub/polls-system-web',
-        credentials: 'Usuário teste: admin@example.com | password@123'
+        credentials: 'Usuário teste: admin@teste.com | Senha@123'
       },
       {
         id: 3,
